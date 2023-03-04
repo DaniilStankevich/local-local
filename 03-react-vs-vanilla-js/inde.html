@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Hello Wordl</title>
+</head>
+<body>
+    
+    <div id="react-app"></div>   <!-- внутри компонент реакт -->
+    <div id="vanilla-app"></div>
+
+
+
+
+
+<script 
+    src="https://unpkg.com/react@18/umd/react.development.js" 
+    crossorigin="">
+</script>
+
+<script 
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" 
+    crossorigin="">
+</script>
+
+    <script>
+        const reactHeading = React.createElement('h1', null, 'Hello from React')
+
+        
+        const conteiner = document.getElementById('react-app') 
+        const root = ReactDOM.createRoot(conteiner)
+
+        
+       
+        root.render(reactHeading)
+
+    </script>
+
+    <script>
+
+        const vanillaJsHeading = document.createElement('h1')
+        vanillaJsHeading.textContent = ' Hello from Vanila JS'
+
+        
+        document.getElementById('vanilla-app').appendChild(vanillaJsHeading)
+
+
+    </script>
+
+
+
+</body>
+</html>
+
+<!-- 
+    https://unpkg.com/react@18/umd/react.development.js
+    https://unpkg.com/react-dom@18/umd/react-dom.development.js
+    https://unpkg.com/babel-standalone@6.26.0/babel.min.js
+-->
